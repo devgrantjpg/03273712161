@@ -2,136 +2,170 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"poppins",sans-serif;
+    font-family:"Poppins",sans-serif;
 }
+
+/* Background */
 body{
-    background-color: #c9d6ff;
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    background: linear-gradient(to right, #1f2533, #2b3244);
+    color: #e0e3eb;
 }
+
+/* Main container */
 .container{
-    background:#fff;
+    background: #2e3446;
     width:450px;
     padding:1.5rem;
     margin:50px auto;
-    border-radius:10px;
-    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    border-radius:12px;
+    box-shadow:0 25px 40px rgba(0,0,0,0.6);
 }
+
+/* Form spacing */
 form{
     margin:0 2rem;
 }
+
 .form-title{
-    font-size:1.5rem;
-    font-weight:bold;
+    font-size:1.6rem;
+    font-weight:600;
     text-align:center;
     padding:1.3rem;
-    margin-bottom:0.4rem;
+    margin-bottom:0.6rem;
+    color:#e6e9f2;
 }
+
+/* Inputs */
 input{
-    color:inherit;
+    color:#e0e3eb;
     width:100%;
     background-color:transparent;
     border:none;
-    border-bottom:1px solid #757575;
+    border-bottom:1px solid #6f768a;
     padding-left:1.5rem;
     font-size:15px;
 }
-.input-group{
-    padding:1% 0;
-    position:relative;
 
+.input-group{
+    padding:1.2% 0;
+    position:relative;
 }
+
 .input-group i{
     position:absolute;
-    color:black;
+    color:#9aa3bd;
 }
+
 input:focus{
-    background-color: transparent;
-    outline:transparent;
-    border-bottom:2px solid hsl(327,90%,28%);
+    outline:none;
+    border-bottom:2px solid #5c7cfa;
 }
+
 input::placeholder{
     color:transparent;
 }
+
+/* Floating labels */
 label{
-    color:#757575;
+    color:#9aa3bd;
     position:relative;
     left:1.2em;
     top:-1.3em;
-    cursor:auto;
     transition:0.3s ease all;
 }
-input:focus~label,input:not(:placeholder-shown)~label{
+
+input:focus~label,
+input:not(:placeholder-shown)~label{
     top:-3em;
-    color:hsl(327,90%,28%);
-    font-size:15px;
+    color:#5c7cfa;
+    font-size:14px;
 }
+
+/* Recover link */
 .recover{
     text-align:right;
-    font-size:1rem;
+    font-size:0.95rem;
     margin-bottom:1rem;
-
 }
+
 .recover a{
     text-decoration:none;
-    color:rgb(125,125,235);
+    color:#8ea2ff;
 }
+
 .recover a:hover{
-    color:blue;
+    color:#5c7cfa;
     text-decoration:underline;
 }
+
+/* Button */
 button{
     font-size:1.1rem;
-    padding:8px 0;
-    border-radius:5px;
-    outline:none;
+    padding:10px 0;
+    border-radius:6px;
     border:none;
     width:100%;
-    background:rgb(125,125,235);
+    background:#5c7cfa;
     color:white;
     cursor:pointer;
-    transition:0.9s;
+    transition:0.3s ease;
 }
+
 button:hover{
-    background:#07001f;
+    background:#4a67e0;
 }
+
+/* OR text */
 .or{
-    font-size:1.1rem;
-    margin-top:0.5rem;
+    font-size:1rem;
+    margin-top:0.8rem;
     text-align:center;
+    color:#b5bdd6;
 }
+
+/* Social icons */
 .icons{
     text-align:center;
 }
+
 .icons i{
-    color:rgb(125,125,235);
+    color:#8ea2ff;
     padding:0.8rem 1.5rem;
     border-radius:10px;
-    font-size:1.5rem;
+    font-size:1.4rem;
     cursor:pointer;
-    border:2px solid #dfe9f5;
-    margin:0 15px;
-    transition:1s;
+    border:2px solid #3c445c;
+    margin:0 12px;
+    transition:0.3s ease;
 }
+
 .icons i:hover{
-    background:#07001f;
-    font-size:1.6rem;
-    border:2px solid rgb(125,125,235);
+    background:#1f2533;
+    border-color:#5c7cfa;
+    color:#5c7cfa;
 }
+
+/* Bottom links */
 .links{
     display:flex;
     justify-content:space-around;
     padding:0 4rem;
-    margin-top:0.9rem;
-    font-weight:bold;
+    margin-top:1rem;
+    font-weight:500;
 }
- #signUpButton, #signInButton{
-    color:rgb(125,125,235);
+
+#signUpButton,
+#signInButton{
+    color:#8ea2ff;
     border:none;
     background-color:transparent;
     font-size:1rem;
-    font-weight:bold;
+    font-weight:600;
+    cursor:pointer;
 }
-#signUpButton:hover, #signInButton:hover {
+
+#signUpButton:hover,
+#signInButton:hover{
     text-decoration:underline;
-    color:blue;
-} 
+    color:#5c7cfa;
+}
