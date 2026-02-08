@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<<<<<<< HEAD
     <title>Unity WebGL Player | Farming RPG Course</title>
+=======
+    <title>Unity Web Player | UnityA2</title>
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -18,6 +22,7 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
+<<<<<<< HEAD
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Farming RPG Course</div>
@@ -31,6 +36,15 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+=======
+        <div id="unity-logo-title-footer"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">UnityA2</div>
+      </div>
+    </div>
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -39,6 +53,10 @@
       // way that non-critical warnings and error messages are presented to the
       // user.
       function unityShowBanner(msg, type) {
+<<<<<<< HEAD
+=======
+        var warningBanner = document.querySelector("#unity-warning");
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
         function updateBannerVisibility() {
           warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
         }
@@ -57,6 +75,7 @@
       }
 
       var buildUrl = "Build";
+<<<<<<< HEAD
       var loaderUrl = buildUrl + "/SimulatorA.loader.js";
       var config = {
         dataUrl: buildUrl + "/SimulatorA.data",
@@ -67,6 +86,25 @@
         productName: "Farming RPG Course",
         productVersion: "0.1",
         showBanner: unityShowBanner,
+=======
+      var loaderUrl = buildUrl + "/ZombieWeb.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/ZombieWeb.data",
+        frameworkUrl: buildUrl + "/ZombieWeb.framework.js",
+        codeUrl: buildUrl + "/ZombieWeb.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "UnityA2",
+        productVersion: "0.1.0",
+        showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
@@ -92,7 +130,11 @@
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
+<<<<<<< HEAD
         container.className = "unity-mobile";
+=======
+        document.querySelector("#unity-container").className = "unity-mobile";
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
         canvas.className = "unity-mobile";
 
         // To lower canvas resolution on mobile devices to gain some
@@ -102,23 +144,40 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
 
+<<<<<<< HEAD
       loadingBar.style.display = "block";
+=======
+      document.querySelector("#unity-loading-bar").style.display = "block";
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
+<<<<<<< HEAD
           progressBarFull.style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
+=======
+          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                document.querySelector("#unity-loading-bar").style.display = "none";
+                document.querySelector("#unity-fullscreen-button").onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
               }).catch((message) => {
                 alert(message);
               });

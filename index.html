@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prime Realty</title>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Dev Studio Zombies | Pixel-Style Zombie Shooter</title>
+  <meta name="description" content="Play Dev Studio Zombies – a thrilling pixel-style zombie shooter with smooth gameplay, epic maps, and endless fun. Download now and survive the apocalypse!">
+  <meta name="keywords" content="Dev Studio Zombies, zombie games, pixel games, zombie shooter, survival game, indie games, action games, mobile gaming, fun zombie game, arcade zombie">
+  <meta name="author" content="Dev Games">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Dev Studio Zombies | Pixel-Style Zombie Shooter">
+  <meta property="og:description" content="Experience epic zombie battles in Dev Studio Zombies. Smooth gameplay, pixel maps, and endless fun await!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourgamewebsite.com/">
+  <meta property="og:image" content="https://yourgamewebsite.com/public/images/ZombieCityC.png">
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dev Studio Zombies | Pixel-Style Zombie Shooter">
+  <meta name="twitter:description" content="Experience epic zombie battles in Dev Studio Zombies. Smooth gameplay, pixel maps, and endless fun await!">
+  <meta name="twitter:image" content="https://yourgamewebsite.com/public/images/ZombieCityC.png">
+
+  <!-- Styles -->
   <style>
     :root {
       --primary: #f77f00;   /* warm orange */
@@ -13,13 +38,10 @@
       --text-muted: #d1d5db;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", system-ui, sans-serif;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Inter", system-ui, sans-serif; }
+    body { background: radial-gradient(circle at top, #141a33, var(--bg-dark)); color:white; }
 
+<<<<<<< HEAD
     body {
       min-height: 100vh;
       color: var(--text-light);
@@ -34,23 +56,44 @@
       background: rgba(255, 255, 255, 0.9);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0,0,0,0.08);
+=======
+    header {
+      position: fixed; top:0; width:100%; z-index:10;
+      backdrop-filter: blur(12px);
+      background: rgba(11,15,26,0.6);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding:1rem 2rem;
+      display:flex; justify-content:space-between; align-items:center;
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
     }
+    .logo { font-weight:700; font-size:1.2rem; background:linear-gradient(90deg,var(--primary),var(--secondary)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .nav a { color:white; text-decoration:none; margin-left:1rem; opacity:0.85; }
+    .signin-btn { padding:0.5rem 1rem; border-radius:999px; background:linear-gradient(90deg,var(--primary),var(--secondary)); color:#0b0f1a; font-weight:600; }
 
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    .hero { min-height:100vh; display:flex; justify-content:center; align-items:center; padding-top:5rem; text-align:center; flex-direction:column; gap:1.5rem; }
+    .hero h1 { font-size:clamp(2.5rem,5vw,4rem); background:linear-gradient(90deg,var(--primary),var(--secondary)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem; }
+    .hero p { font-size:1.1rem; opacity:0.85; line-height:1.6; max-width:600px; }
 
+<<<<<<< HEAD
     .logo {
       font-weight: 800;
       font-size: 1.2rem;
       color: var(--secondary);
+=======
+    .hero button {
+      padding:0.75rem 1.5rem;
+      border:none;
+      border-radius:999px;
+      background:linear-gradient(90deg,var(--primary),var(--secondary));
+      color:#0b0f1a;
+      font-weight:600;
+      cursor:pointer;
+      transition: transform 0.2s;
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
     }
+    .hero button:hover { transform:scale(1.05); }
 
+<<<<<<< HEAD
     .nav a {
       color: #1f2933;
       text-decoration: none;
@@ -152,12 +195,20 @@
         padding: 2rem;
       }
     }
+=======
+    .scroller { display:flex; overflow-x:auto; scroll-behavior:smooth; padding:2rem; gap:2rem; }
+    .card { min-width:300px; height:400px; border-radius:20px; overflow:hidden; flex-shrink:0; background-size:cover; background-position:center; position:relative; cursor:pointer; transition: transform 0.3s; }
+    .card:hover { transform:scale(1.03); }
+    .card .label { position:absolute; bottom:1rem; left:1rem; background:rgba(0,0,0,0.5); padding:0.5rem 1rem; border-radius:12px; }
+    .card h3 { margin-bottom:0.3rem; font-size:1.3rem; }
+    .card span { font-size:0.9rem; opacity:0.9; color:#fff; }
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
+<<<<<<< HEAD
     <nav class="nav">
       <div class="logo">SMVM</div>
       <div>
@@ -177,8 +228,42 @@
         Contact Us to Book in advance.
       </p>
       <a href="listings.html" class="cta-btn">Conntact Us</a>
+=======
+    <div class="logo">Dev Games</div>
+    <div class="nav">
+      <a href="#">Contact</a>
     </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Dev Studio Zombies</h1>
+      <p>Smooth gameplay, cool maps, pixel-style zombies!</p>
+>>>>>>> 170276624ea61a680484c2285d45fbf385353c7f
+    </div>
+    <button>
+      <a href="https://www.paypal.com/ncp/payment/KFUA2KTNUY7SC
+      " style="color:#0b0f1a; text-decoration:none;">Download Here</a>
+    </button>
   </section>
 
+  <section>
+
+  </section>
+  Zombies, zombie games, pixel <a href="index2.html">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"  Zombies, zombie games, pixel <a href="index2.html ">zombies</a>games, zombie shooter, survival game, indie games, action games, <a href="index2.html">zombies</a>gaming, fun zombie game, arcade zombie"
+  Zombies, zombie games, pixel games, <a href="index2.html">studio</a>zombie shooter, survival game, indie games, action games, gaming, fun zombie game, arcade zombie"
+<section>
+  
+
+</section>
 </body>
 </html>
